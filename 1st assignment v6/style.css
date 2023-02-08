@@ -1,0 +1,162 @@
+  
+
+
+  .container{
+      display:grid;
+      width:80vw;
+      margin: auto;
+      grid-template-columns:50% 50%;
+      grid-template-rows:45vh 45vh;
+      grid-template-areas: 
+      "top top"
+      "bottomLeft bottomRight"
+      "footer footer";
+      border: 2px solid lightgoldenrodyellow;
+/*      justify-content: center;*/
+       border-radius: 25px;
+
+  }
+  .box{
+    display: flex;
+/*    align-items: center;*/
+/*    justify-content:center;*/
+    border: 3px solid blue;
+    margin: 15px;
+    border-radius: 25px;
+    }
+  
+
+
+  #nestedGrid{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border:3px solid purple;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+  .blogTitle{
+       text-align: right;
+       vertical-align: top;
+  }
+
+
+
+
+
+#nestedGrid > div {
+  background: lightgreen;
+  padding: 8px;
+}
+
+
+  #one{
+    grid-area: top;
+  }
+
+  #two{
+    grid-area: bottomLeft;
+    background-image: url(stars.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
+  #three{
+    grid-area: bottomRight;
+    background-color: lightblue;
+
+  }
+
+  #four{
+    grid-area:footer;
+  }
+
+   #five{
+    grid-area:missedItem;
+  }
+
+
+
+@media(min-width:900px) {
+
+    .container{
+      display:grid;
+      width:80vw;
+      margin: auto;
+      grid-template-columns:33.3% 33.3% 33.3%;
+      grid-template-rows:45vh 45vh;
+      grid-template-areas: 
+      "top top top"
+      "bottomLeft bottomRight newItem"
+      "footer footer footer";
+      border: 2px solid lightgoldenrodyellow;
+/*      justify-content: center;*/
+       border-radius: 25px;
+
+  }
+  .box{
+    display: flex;
+/*    align-items: center;*/
+/*    justify-content:center;*/
+    border: 3px solid blue;
+    margin: 15px;
+    border-radius: 25px;
+    }
+  
+
+
+  #nestedGrid{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border:3px solid purple;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+  .blogTitle{
+       text-align: right;
+       vertical-align: top;
+  }
+
+
+
+
+
+/*#nestedGrid > div {
+  background: lightgreen;
+  padding: 8px;
+}*/
+
+
+  #one{
+    grid-area: top;
+  }
+
+  #two{
+    grid-area: bottomLeft;
+    background-image: url(stars.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
+  #three{
+    grid-area: bottomRight;
+    background-color: lightblue;
+
+  }
+
+  #four{
+    grid-area:footer;
+  }
+
+  #five{
+    grid-area:missedItem;
+  }
+
+  #six{
+    grid-area:newItem;
+  }
+
+}
